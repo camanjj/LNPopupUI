@@ -11,11 +11,11 @@ let package = Package(
     products: [
         .library(
             name: "LNPopupUI",
-			type: .dynamic,
+// 			type: .dynamic,
             targets: ["LNPopupUI"]),
 		.library(
 			name: "LNPopupUI-Static",
-			type: .static,
+// 			type: .static,
 			targets: ["LNPopupUI"]),
     ],
     dependencies: [
@@ -26,7 +26,7 @@ let package = Package(
         .target(
             name: "LNPopupUI",
 			dependencies: [
-				.product(name: "LNPopupController-Static", package: "LNPopupController")
+				.product(name: "LNPopupController", package: "LNPopupController")
 			])
     ]
 )
